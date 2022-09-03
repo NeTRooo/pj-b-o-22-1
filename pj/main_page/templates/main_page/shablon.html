@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- developer: https://t.me/DOfTheS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'main_page/img/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'main_page/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main_page/css/transform.css' %}">
+    {% block styles %}
+    {% endblock %}
+</head>
+<body>
+    <!-- developer: https://t.me/DOfTheS -->
+    <div class="nav">
+        <div class="logo">
+            <a href="#">
+                <p class="h1">//ПИЖ-Б-О-22-1</p>
+            </a>
+        </div>
+        <div class="other">
+            <a href="#" class="h5">Список Предметов</a>
+        </div>
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <!-- developer: https://t.me/DOfTheS -->
+</body>
+</html>

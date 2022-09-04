@@ -30,8 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 # ALLOWED_HOSTS = [
-#     "pj.heylon.ru",
-#     "192.192.192.192",
+#     "pj-ncfu.ru",
+#     "193.164.17.141",
 #     "127.0.0.1",
 #     "localhost",
 # ]
@@ -92,15 +92,15 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://pj.heylon.ru",
-    "http://192.192.192.192:8000",
+    "https://pj-ncfu.ru",
+    "http://193.164.17.141:8000",
     "http://localhost:8000",
     "http://127.0.0.1:8000"
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://pj.heylon.ru",
-    "http://192.192.192.192:8000",
+    "https://pj-ncfu.ru",
+    "http://193.164.17.141:8000",
     "http://localhost:8000",
     "http://127.0.0.1:8000"
 ]

@@ -32,9 +32,9 @@ DEBUG = True
 ALLOWED_HOSTS = [
 #     "pj-ncfu.ru",
 #     "193.164.17.141",
-        "127.0.0.1",
-        "localhost",
- ]
+    "127.0.0.1",
+    "localhost",
+]
 
 
 # Application definition

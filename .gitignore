@@ -1,3 +1,4 @@
 pj/pj/settings.py
 pj/secret.py
-pj/pj/__pycache__/settings.cpython-39.pyc
+pj/pj/__pycache__
+pj/pj/secret.py

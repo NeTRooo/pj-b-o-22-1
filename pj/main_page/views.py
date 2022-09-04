@@ -11,3 +11,5 @@ from django.contrib.auth.models import User, Group
 
 def main_home(request):
     return render(request, 'main_page/main_page.html')
+def disciplines(request):
+    return render(request, 'main_page/disciplines.html')

@@ -7,5 +7,4 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main_page.urls')),
-    path('disciplines/', include('main_page.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

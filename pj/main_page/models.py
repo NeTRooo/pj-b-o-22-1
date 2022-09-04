@@ -5,6 +5,7 @@ class Disciplines(models.Model):
 
     discipline = models.TextField(verbose_name='Предмет')
     actualhomework = models.TextField(verbose_name='Актуальное дз')
+    actualfile = models.FileField(upload_to='homework')
 
     class Meta:
         verbose_name = 'Актуальное дз'

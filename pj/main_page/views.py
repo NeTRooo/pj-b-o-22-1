@@ -13,3 +13,6 @@ def main_home(request):
 
 def disciplines(request):
     return render(request, 'main_page/disciplines.html')
+
+def discipline_page(request):
+    return render(request, 'main_page/discipline_page.html')

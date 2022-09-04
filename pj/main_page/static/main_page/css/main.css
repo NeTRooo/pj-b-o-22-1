@@ -43,6 +43,24 @@ h5,.h5{font-size:24px;line-height:30px;font-weight:500;cursor:default;}h6,.h6{fo
 .left_bottom{border-top:1px solid var(--BG_4);border-right:1px solid var(--BG_4);}
 .right_top{border-bottom:1px solid var(--BG_4);border-left:1px solid var(--BG_4);}
 .right_bottom{border-top:1px solid var(--BG_4);border-left:1px solid var(--BG_4);}
+/* disciplines */
+.buttons{display:block;
+         position:inline-table;;
+         }
+
+.schedule{height:700px;width:100%;margin-top:32px;
+    background-color:var(--BG_3);border-radius:10px;
+    display:flex;flex-direction:row;
+}
+.schedule_left{height:50%;width:25%;color:var(--TC_2);border-radius:10px 0px 0px 10px;}
+.schedule_right{height:100%;width:75%;border-radius:0px 10px 10px 0px;}
+.left_top{display:flex;align-items:center;justify-content:center;}
+.left_top,.right_top{height:96px;}.left_bottom,.right_bottom{height:604px;}
+.left_top{border-bottom:1px solid var(--BG_4);border-right:1px solid var(--BG_4);}
+.left_bottom{border-top:1px solid var(--BG_4);border-right:1px solid var(--BG_4);}
+.right_top{border-bottom:1px solid var(--BG_4);border-left:1px solid var(--BG_4);}
+.right_bottom{border-top:1px solid var(--BG_4);border-left:1px solid var(--BG_4);}
+
 
 
 

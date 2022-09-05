@@ -8,7 +8,8 @@
 .left_bottom{ justify-content:center; display:flex;}
 .left_top,.right_top{height:96px;}.left_bottom,.right_bottom{height:604px;}
 .left_top{border-bottom:1px solid var(--BG_4);border-right:1px solid var(--BG_4);}.left_bottom{border-top:1px solid var(--BG_4);border-right:1px solid var(--BG_4);}
-.right_top{border-bottom:1px solid var(--BG_4);border-left:1px solid var(--BG_4);}.right_bottom{border-top:1px solid var(--BG_4);border-left:1px solid var(--BG_4); padding-left:8px; padding-top:8px;}
+.right_top{border-bottom:1px solid var(--BG_4);border-left:1px solid var(--BG_4);}.right_bottom{border-top:1px solid var(--BG_4);border-left:1px solid var(--BG_4);padding-left:8px;padding-top:8px;}
+.left_bottom p{padding-top:8px;}
 
 
 

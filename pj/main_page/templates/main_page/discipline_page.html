@@ -1,7 +1,7 @@
 {% extends 'main_page/shablon.html' %}
 {% load static %}
 
-{% block title %}Главная | ПИЖ{% endblock  %}
+{% block title %}{{ discipline.discipline }} | ПИЖ{% endblock  %}
 
 {% block styles %}
     <link rel="stylesheet" href="{% static 'main_page/css/discipline_page.css' %}">

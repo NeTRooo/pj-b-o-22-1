@@ -15,5 +15,5 @@ def disciplines(request):
     return render(request, 'main_page/disciplines.html')
 
 def discipline_page(request, discipline):
-    discipline = Disciplines.objects.get(eng_discipline=discipline)
-    return render(request, 'main_page/discipline_page.html', {"discipline":discipline})
+    discipline_bd = Disciplines.objects.get(eng_discipline=discipline)
+    return render(request, 'main_page/discipline_page.html', {"discipline":discipline_bd})

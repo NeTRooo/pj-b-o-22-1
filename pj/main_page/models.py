@@ -16,7 +16,8 @@ class DisciplinesActual(models.Model):
     discipline = models.ForeignKey(Disciplines, on_delete=models.CASCADE,verbose_name='Домашка какого предмета')
     eng_discipline = models.TextField(verbose_name='Предмет на англ')
     actual_homework = models.TextField(verbose_name='Актуальное дз')
-    actual_file = models.FileField(upload_to='homework', verbose_name='Дз файл')
+    actual_file = models.FileField(upload_to='homework', verbose_name='Дз файл', null=True)
+    date = models.DateField(verbose_name='Дата дз')
 
     class Meta:
         verbose_name = 'Актуальное дз'
@@ -28,7 +29,8 @@ class DisciplineHomeWork(models.Model):
     discipline = models.ForeignKey(Disciplines, on_delete=models.CASCADE,verbose_name='Домашка какого предмета')
     eng_discipline = models.TextField(verbose_name='Предмет на англ')
     actual_homework = models.TextField(verbose_name='Дз')
-    actual_file = models.FileField(upload_to='homework', verbose_name='Дз файл')
+    actual_file = models.FileField(upload_to='homework', verbose_name='Дз файл', null=True)
+    date = models.DateField(verbose_name='Дата дз')
 
     class Meta:
         verbose_name = 'Все дз'

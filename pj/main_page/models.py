@@ -10,8 +10,8 @@ class Disciplines(models.Model):
         verbose_name = 'Предмет'
         verbose_name_plural = 'Предметы'
     
-    #def __str__(self):
-        #return self.discipline
+    def __str__(self):
+        return self.discipline
 
 # discipline, eng_discipline, actual_homework, actual_file
 class DisciplinesActual(models.Model):
@@ -26,8 +26,8 @@ class DisciplinesActual(models.Model):
         verbose_name = 'Актуальное дз'
         verbose_name_plural = 'Актуальные дз'
     
-    #def __str__(self):
-     #   return self.discipline
+    def __str__(self):
+        return self.eng_discipline
 
 # discipline, eng_discipline, actual_homework, actual_file
 class DisciplineHomeWork(models.Model):
@@ -42,5 +42,5 @@ class DisciplineHomeWork(models.Model):
         verbose_name = 'Все дз'
         verbose_name_plural = 'Все дз'
     
-    #def __str__(self):
-    #   return self.discipline
+    def __str__(self):
+        return self.eng_discipline

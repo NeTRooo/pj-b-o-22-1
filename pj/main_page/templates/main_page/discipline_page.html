@@ -5,6 +5,7 @@
 
 {% block styles %}
     <link rel="stylesheet" href="{% static 'main_page/css/discipline_page.css' %}">
+    <script src="{% static 'main_page/js/discipline_page.js' %}"></script>
 {% endblock %}
 
 {% block content %}
@@ -15,20 +16,19 @@
     </div>
     <div class="schedule">
         <div class="schedule_left">
-            <div class="left_top">
-                <p class="h3">Дата</p>
-            </div>
+            <div class="left_top"><p class="h3">Дата</p></div>
             <div class="left_bottom">
-                <p class="h4">{{ date.date }}</p>
+                {% for homework_date in homework %}
+                    <p onclick="hw_date('date_{{ homework_date.id }}','actual_{{ homework_date.id }}')" id="date_{{ homework_date.id }}" class="h4">{{ homework_date.date }}</p>
+                {% endfor %}
             </div>
         </div>
         <div class="schedule_right">
-            <div class="right_top">
-
-            </div>
-            <div class="right_bottom">
-                <p class="h6">{{ date.actual_homework }}</p>
-
+            <div class="right_top"></div>
+            <div id="right_bottom" class="right_bottom">
+                {% for homework_actual in homework %}
+                    <p id="actual_{{ homework_actual.id }}" class="h6 hidden">{{ homework_actual.actual_homework }}</p>
+                {% endfor %}
             </div>
         </div>
     </div>

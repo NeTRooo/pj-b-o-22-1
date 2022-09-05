@@ -4,8 +4,7 @@ from django.contrib.auth import logout
 import json
 import requests
 from django.contrib.auth.models import User, Group
-from .models import Disciplines
-from .models import DisciplinesActual
+from .models import Disciplines, DisciplinesActual, DisciplineHomeWork
 # from django import forms
 # from .forms import *
 
@@ -16,6 +15,6 @@ def disciplines(request):
     return render(request, 'main_page/disciplines.html')
 
 def discipline_page(request, discipline):
-    discipline_bd = Disciplines.objects.get(eng_discipline=discipline)
-    date_db = DisciplinesActual.objects.get(eng_discipline=discipline)
-    return render(request, 'main_page/discipline_page.html', {"discipline":discipline_bd, "date":date_db})
+    discipline_db = Disciplines.objects.get(eng_discipline=discipline)
+    homework_db = DisciplineHomeWork.objects.filter(eng_discipline=discipline)
+    return render(request, 'main_page/discipline_page.html', {"discipline":discipline_db,"homework":homework_db})

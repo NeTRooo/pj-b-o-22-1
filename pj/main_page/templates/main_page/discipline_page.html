@@ -19,7 +19,7 @@
             <div class="left_top"><p class="h3">Дата</p></div>
             <div class="left_bottom">
                 {% for homework_date in homework %}
-                    <p onclick="hw_date('date_{{ homework_date.id }}','actual_{{ homework_date.id }}')" id="date_{{ homework_date.id }}" class="h4 change-text">{{ homework_date.date }}</p>
+                    <p onclick="hw_date('date_{{ homework_date.id }}','actual_{{ homework_date.id }}')" id="date_{{ homework_date.id }}" class="h4">{{ homework_date.date }}</p>
                 {% endfor %}
             </div>
         </div>
@@ -27,7 +27,12 @@
             <div class="right_top"></div>
             <div id="right_bottom" class="right_bottom">
                 {% for homework_actual in homework %}
-                    <p id="actual_{{ homework_actual.id }}" class="h6 hidden">{{ homework_actual.actual_homework }}</p>
+                    <div id="actual_{{ homework_actual.id }}" class="hidden">
+                        <p class="h6">{{ homework_actual.actual_homework }}</p>
+                        {% if homework_actual.actual_file.name %}
+                        <a class="h5" href="{{ homework_actual.actual_file.url }}">>>Прикреплённый файл<<</a>
+                        {% endif %}
+                    </div>
                 {% endfor %}
             </div>
         </div>

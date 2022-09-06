@@ -3,7 +3,7 @@ function hw_date(date, actual){
         classList = 'classList' in el;
     for (var i = 0; i < el.children.length; i++) {
         var child = el.children[i];
-        if (child.tagName == 'P') {
+        if (child.tagName == 'DIV') {
             if (classList) {
                 child.classList.add('hidden');
             } else {

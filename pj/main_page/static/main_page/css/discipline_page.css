@@ -12,4 +12,16 @@
 .left_bottom p{padding-top:8px;cursor:pointer;}
 .hidden{visibility:hidden;display:none;}
 
-
+p.change-text{
+  color: #71757D; /* Цвет текста */
+  font-size: 2em; /* Размер текста */
+  font-weight: bold;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  line-height: 1;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+p.change-text:hover{
+  color: #5265f6; /* Меняем цвет текста */
+}

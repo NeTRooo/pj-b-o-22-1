@@ -19,7 +19,7 @@
             <div class="left_top"><p class="h3">Дата</p></div>
             <div class="left_bottom">
                 {% for homework_date in homework %}
-                    <p onclick="hw_date('date_{{ homework_date.id }}','actual_{{ homework_date.id }}')" id="date_{{ homework_date.id }}" class="h4">{{ homework_date.date }}</p>
+                    <p onclick="hw_date('date_{{ homework_date.id }}','actual_{{ homework_date.id }}')" id="date_{{ homework_date.id }}" class="h4 change-text">{{ homework_date.date }}</p>
                 {% endfor %}
             </div>
         </div>

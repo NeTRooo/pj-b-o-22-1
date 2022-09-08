@@ -20,3 +20,7 @@ def discipline_page(request, discipline):
     if not homework_db:
         homework_db = DisciplineHomeWork.objects.filter(eng_discipline='test')
     return render(request, 'main_page/discipline_page.html', {"discipline":discipline_db,"homework":homework_db})
+
+def files(request):
+    homework_db = DisciplineHomeWork.objects.all()
+    return render(request, 'main_page/files.html', {"homework":homework_db})

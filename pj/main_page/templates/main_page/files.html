@@ -1,0 +1,21 @@
+{% extends 'main_page/shablon.html' %}
+{% load static %}
+
+{% block title %}Предметы | ПИЖ{% endblock  %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'main_page/css/disciplines.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="schedule">
+        {% for homework_actual in homework %}
+                    <div id="actual_{{ homework_actual.id }}" class="hidden">
+                        <p class="h6">{{ homework_actual.actual_homework }}</p>
+                        {% if homework_actual.actual_file.name %}
+                        <a class="h5" href="{{ homework_actual.actual_file.url }}">>>Прикреплённый файл<<</a>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+    </div>
+{% endblock %}

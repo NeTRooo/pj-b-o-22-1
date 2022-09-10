@@ -8,9 +8,10 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="shortcut icon" type="image/png" href="{% static 'main_page/img/favicon.png' %}">
     <link rel="stylesheet" href="{% static 'main_page/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'main_page/css/transform.css' %}">
     {% block styles %}
     {% endblock %}
+    <link rel="stylesheet" href="{% static 'main_page/css/transform.css' %}">
+    <script src="{% static 'main_page/js/nav.js' %}"></script>
 </head>
 <body>
     <!-- developer: https://t.me/DOfTheS -->
@@ -18,11 +19,20 @@
         <div class="logo">
             <a href="/">
                 <p class="h1">//ПИЖ-Б-О-22-1</p>
+                <p class="h1 mobile">ПИЖ-22</p>
             </a>
         </div>
         <div class="other">
             <a href="/files/" class="h5">Файлы</a>
             <a href="/disciplines/" class="h5">Список Предметов</a>
+        </div>
+        <div class="mobile">
+            <img onclick="open_burger('burger')" id="open1" src="{% static 'main_page/img/open.png' %}">
+            <div id="burger" class="menu burger_hidden">
+                <div><a href="/files/" class="ui_18_m">Файлы</a></div>
+                <div><a href="/disciplines/" class="ui_18_m">Список Предметов</a></div>
+            </div>
+            <div id="open_window1" class="nav__profile-open-window window_hidden"></div>
         </div>
     </div>
     <div class="content">

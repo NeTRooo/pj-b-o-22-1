@@ -34,6 +34,7 @@ h5,.h5{font-size:24px;line-height:30px;font-weight:500;cursor:default;}h6,.h6{fo
 .nav{display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding-left:48px;padding-right:48px;background-color:var(--BG_2);z-index:2;height:76px;border-radius:10px;color:var(--TC_0);}
 .content{margin-top:32px;margin-left:48px;margin-right:48px;}
 .nav .other a,.nav .logo a p{cursor:pointer;}
-.other a{margin-left:16px;}
+.other a{margin-left:16px;}.mobile,.menu,.burger_hidden{visibility:hidden;display:none;}
+.open-svg{transition:0.5s;transform:rotateY(180deg);}
 /* disciplines */
 .schedule_left{height:50%;width:25%;color:var(--TC_2);border-radius:10px 0px 0px 10px;}

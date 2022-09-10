@@ -1,0 +1,20 @@
+@media only screen and (max-width:1200px){}
+@media only screen and (max-width:992px){
+    .logo a p{font-size:32px;line-height:39px;font-weight:700;}
+    .schedule_left{width:30%;}.schedule_right{width:70%;}
+    .button_current p{font-size:24px;line-height:30px;font-weight:500;}
+}
+@media only screen and (max-width:768px){
+    .content{margin-top:16px;margin-left:16px;margin-right:16px;}
+    .nav{padding-left:16px;padding-right:16px;}
+    .nav .logo a p:first-child,.nav .other{visibility:hidden;display:none;}
+    .mobile{visibility:visible;display:block;}
+
+    .menu{background-color:var(--BG_2);width:100px;height:200px;position:absolute;top:76px;transform: scaleY(0);}
+}
+@media only screen and (max-width:480px){
+
+}
+@media only screen and (max-width:320px){
+
+}

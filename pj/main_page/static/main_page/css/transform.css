@@ -10,7 +10,7 @@
     .nav .logo a p:first-child,.nav .other{visibility:hidden;display:none;}
     .mobile{visibility:visible;display:block;}
 
-    .menu{background-color:var(--BG_2);width:100px;height:200px;position:absolute;top:76px;transform: scaleY(0);}
+    .menu{position:absolute;top:80px;height:90px;width:100%;background-color:var(--BG_2);left:0px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;}
 }
 @media only screen and (max-width:480px){
 

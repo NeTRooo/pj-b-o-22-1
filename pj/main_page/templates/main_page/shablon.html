@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
     <link rel="shortcut icon" type="image/png" href="{% static 'main_page/img/favicon.png' %}">
-    <link rel="stylesheet" href="{% static 'main_page/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main_page/css/style-001.css' %}">
     {% block styles %}
     {% endblock %}
-    <link rel="stylesheet" href="{% static 'main_page/css/transform.css' %}">
+    <link rel="stylesheet" href="{% static 'main_page/css/transform-001.css' %}">
     <script src="{% static 'main_page/js/nav.js' %}"></script>
 </head>
 <body>
@@ -27,7 +27,7 @@
             <a href="/disciplines/" class="h5">Список Предметов</a>
         </div>
         <div class="mobile">
-            <img onclick="open_burger('burger')" id="open1" src="{% static 'main_page/img/open.png' %}">
+            <img onclick="open_burger('burger')" id="open1" src="{% static 'main_page/img/svg/open.svg' %}">
             <div id="burger" class="menu burger_hidden">
                 <a href="/files/" class="h5">Файлы</a>
                 <a href="/disciplines/" class="h5">Список Предметов</a>

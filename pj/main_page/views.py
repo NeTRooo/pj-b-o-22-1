@@ -24,3 +24,7 @@ def discipline_page(request, discipline):
 def files(request):
     homework_db = DisciplineHomeWork.objects.all()
     return render(request, 'main_page/files.html', {"homework":homework_db})
+
+def upload_homework(request):
+    discipline_db = Disciplines.objects.all()
+    return render(request, 'main_page/upload_homework.html', {"discipline":discipline_db})

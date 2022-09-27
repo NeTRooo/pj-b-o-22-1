@@ -44,3 +44,13 @@ class DisciplineHomeWork(models.Model):
     
     def __str__(self):
         return self.eng_discipline
+
+# homework, files
+class Uploads(models.Model):
+    
+    homework = models.ForeignKey(DisciplineHomeWork, on_delete=models.CASCADE, verbose_name="Прикреплён к таблице")
+    files = models.FileField(upload_to="homework/%Y/%m/%d", verbose_name='Загруженный файл')
+    
+    class Meta:
+        verbose_name = 'Загруженный файл'
+        verbose_name_plural = 'Загруженные файлы'

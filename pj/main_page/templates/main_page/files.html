@@ -14,7 +14,7 @@
             <div id="actual_{{ homework_actual.id }}" class="hidden">
                 <p class="h6">{{ homework_actual.actual_file.name }}</p>
                 {% if homework_actual.actual_file.name %}
-                <a class="h5" href="{{ homework_actual.actual_file.url }}">>>Прикреплённый файл<<</a>
+                <a class="h5" href="{{ homework_actual.actual_file.url }}" target="_blank">>>Прикреплённый файл<<</a>
                 {% endif %}
             </div>
         {% endfor %}

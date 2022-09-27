@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Disciplines, DisciplinesActual, DisciplineHomeWork
+from .models import Disciplines, DisciplinesActual, DisciplineHomeWork, Uploads
 
 #  
 #  configuring the display
@@ -23,10 +23,17 @@ class DisciplineHomeWorkAdmin(admin.ModelAdmin):
     list_display_links = ('discipline', 'actual_homework')
     search_fields = ('discipline', 'eng_discipline')
 
+# homework, files
+class UploadsAdmin(admin.ModelAdmin):
+    list_display = ('homework', 'files')
+    list_display_links = ('homework', 'files')
+    search_fields = ('homework',)
+
 #  
 #  Register model
 #  
 
+admin.site.register(Uploads, UploadsAdmin)
 admin.site.register(Disciplines, DisciplinesAdmin)
 admin.site.register(DisciplinesActual, DisciplinesActualAdmin)
 admin.site.register(DisciplineHomeWork, DisciplineHomeWorkAdmin)
